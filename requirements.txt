@@ -6,3 +6,4 @@ torch==2.1.0.dev20230701+cu121
 safetensors==0.3.1
 sentencepiece==0.1.99
 ninja==1.11.1
+numpy==1.25.0

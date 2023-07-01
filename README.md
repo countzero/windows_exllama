@@ -1,6 +1,6 @@
 # Learning ExLlama
 
-...
+A PowerShell automation to rebuild [ExLlama](exllama) for a Windows environment.
 
 ## Installation
 
@@ -78,6 +78,14 @@ git clone https://huggingface.co/TheBloke/vicuna-7B-v1.3-GPTQ ./models/vicuna-7B
 
 ### Chat
 
+Activate the conda environment to make the dependencies available via:
+
+```Shell
+conda activate exllama
+```
+
+Execute the following to chat with a GPTQ formatted model:
+
 ```PowerShell
 python ./vendor/exllama/example_chatbot.py `
     --directory "./models/vicuna-7B-v1.3-GPTQ" `
@@ -86,6 +94,14 @@ python ./vendor/exllama/example_chatbot.py `
 ```
 
 ### Benchmark
+
+Activate the conda environment to make the dependencies available via:
+
+```Shell
+conda activate exllama
+```
+
+Execute the following to benchmark your system:
 
 ```PowerShell
 python ./vendor/exllama/test_benchmark_inference.py `
