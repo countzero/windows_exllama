@@ -1,6 +1,6 @@
 # Learning ExLlama
 
-A PowerShell automation to rebuild [ExLlama](exllama) for a Windows environment.
+This is a playground to explore the [ExLlama](https://github.com/turboderp/exllama) project in a Windows environment.
 
 ## Installation
 
