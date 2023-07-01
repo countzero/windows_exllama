@@ -1,0 +1,4 @@
+[submodule "vendor/exllama"]
+	path = vendor/exllama
+	url = git@github.com:turboderp/exllama.git
+	ignore = dirty
