@@ -106,6 +106,6 @@ Execute the following to benchmark your system:
 ```PowerShell
 python ./vendor/exllama/test_benchmark_inference.py `
     --directory "./models/vicuna-7B-v1.3-GPTQ" `
-    --prompt `
-    --perplexity
+    --perplexity `
+    --perf
 ```
