@@ -60,11 +60,17 @@ conda init
 
 ### 6. Execute the build script
 
-...
+```PowerShell
+./rebuild_exllama.ps1
+```
 
 ### 7. Download a large language model
 
-...
+Download a large language model (LLM) with weights in the GPTQ format into the `./models` directory. You can for example download the [vicuna-7b-v1.3](https://huggingface.co/lmsys/vicuna-7b-v1.3) model in a quantized GPTQ format via:
+
+```Shell
+git clone https://huggingface.co/TheBloke/vicuna-7B-v1.3-GPTQ ./models/vicuna-7B-v1.3-GPTQ
+```
 
 **Hint:** See the [🤗 Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) for best in class open source LLMs.
 
@@ -72,7 +78,18 @@ conda init
 
 ### Chat
 
-...
+```PowerShell
+python ./vendor/exllama/example_chatbot.py `
+    -d "./models/vicuna-7B-v1.3-GPTQ" `
+    -un "Jeff" `
+    -p "./vendor/exllama/prompt_chatbort.txt"
+```
 
-### Rebuild
+### Benchmark
 
+```PowerShell
+python ./vendor/exllama/test_benchmark_inference.py `
+    -d "./models/vicuna-7B-v1.3-GPTQ" `
+    -p `
+    -ppl
+```

@@ -1,0 +1,8 @@
+# We are using a specific version of the "torch"
+# package which supports a specific CUDA version.
+--index-url https://download.pytorch.org/whl/nightly/cu121
+torch==2.1.0.dev20230701+cu121
+
+safetensors==0.3.1
+sentencepiece==0.1.99
+ninja==1.11.1
