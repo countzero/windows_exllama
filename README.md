@@ -80,16 +80,16 @@ git clone https://huggingface.co/TheBloke/vicuna-7B-v1.3-GPTQ ./models/vicuna-7B
 
 ```PowerShell
 python ./vendor/exllama/example_chatbot.py `
-    -d "./models/vicuna-7B-v1.3-GPTQ" `
-    -un "Jeff" `
-    -p "./vendor/exllama/prompt_chatbort.txt"
+    --directory "./models/vicuna-7B-v1.3-GPTQ" `
+    --username "Dave" `
+    --prompt "./vendor/exllama/prompt_chatbort.txt"
 ```
 
 ### Benchmark
 
 ```PowerShell
 python ./vendor/exllama/test_benchmark_inference.py `
-    -d "./models/vicuna-7B-v1.3-GPTQ" `
-    -p `
-    -ppl
+    --directory "./models/vicuna-7B-v1.3-GPTQ" `
+    --prompt `
+    --perplexity
 ```
