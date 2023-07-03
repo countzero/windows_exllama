@@ -106,6 +106,22 @@ Execute the following to benchmark your system:
 ```PowerShell
 python ./vendor/exllama/test_benchmark_inference.py `
     --directory "./models/vicuna-7B-v1.3-GPTQ" `
-    --perplexity `
     --perf
+```
+
+### Measure model perplexity
+
+Activate the conda environment to make the dependencies available via:
+
+```Shell
+conda activate exllama
+```
+
+Execute the following to measure the perplexity of the GPTQ formatted model:
+
+```PowerShell
+python ./vendor/exllama/test_benchmark_inference.py `
+    --directory "./models/vicuna-7B-v1.3-GPTQ" `
+    --perplexity `
+    --perplexity_dataset "./vendor/exllama/datasets/wikitext2_val_sample.jsonl"
 ```
