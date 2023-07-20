@@ -91,7 +91,9 @@ python ./vendor/exllama/example_chatbot.py `
     --directory "./models/vicuna-7B-v1.3-GPTQ" `
     --prompt "./prompts/chatbot.txt" `
     --botname "Vicuña" `
-    --username "User"
+    --username "User" `
+    --length 2048 `
+    --no_newline
 ```
 
 ### Benchmark
