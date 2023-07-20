@@ -89,8 +89,9 @@ Execute the following to chat with a GPTQ formatted model:
 ```PowerShell
 python ./vendor/exllama/example_chatbot.py `
     --directory "./models/vicuna-7B-v1.3-GPTQ" `
-    --username "Dave" `
-    --prompt "./vendor/exllama/prompt_chatbort.txt"
+    --prompt "./prompts/chatbot.txt" `
+    --botname "Vicuña" `
+    --username "User"
 ```
 
 ### Benchmark
